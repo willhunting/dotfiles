@@ -8,7 +8,9 @@ syntax on
 set number
 set smarttab
 set t_Co=256
-colorscheme molokai
+set background=dark
+let g:solarized_termcolors=256
+colorscheme solarized 
 :imap jj <Esc>
 let g:loaded_matchparen= 1
 let mapleader = "," 
