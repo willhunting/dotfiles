@@ -4,9 +4,9 @@ set tabstop=4
 set expandtab
 set nowrap
 filetype on
+filetype indent on
 syntax on
 set number
-set smarttab
 set t_Co=256
 :imap jj <Esc>
 set background=dark
@@ -17,8 +17,13 @@ let mapleader = ","
 
 "Auto indent curly braces
 :nmap <leader>b a{<cr>}<esc>O
-" set cindent
 
+"FILETYPES-------------------------"
+autocmd FileType c,cpp set cindent
+
+autocmd FileType css set smartindent
+
+autocmd FileType ruby set autoindent shiftwidth=2 softtabstop=2 expandtab
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
