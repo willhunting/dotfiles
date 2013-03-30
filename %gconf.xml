@@ -1,0 +1,31 @@
+<!-- gnome terminal color settings !-->
+<?xml version="1.0"?>
+<gconf>
+	<entry name="font" mtime="1364625130" type="string">
+		<stringvalue>DejaVu Sans Mono Bold 11</stringvalue>
+	</entry>
+	<entry name="use_system_font" mtime="1364625130" type="bool" value="false"/>
+	<entry name="bold_color_same_as_fg" mtime="1364621963" type="bool" value="true"/>
+	<entry name="background_darkness" mtime="1364625130" type="float" value="1"/>
+	<entry name="use_theme_background" mtime="1364625130" type="bool" value="false"/>
+	<entry name="background_type" mtime="1364625130" type="string">
+		<stringvalue>transparent</stringvalue>
+	</entry>
+	<entry name="use_theme_colors" mtime="1364625130" type="bool" value="false"/>
+	<entry name="visible_name" mtime="1364625130" type="string">
+		<stringvalue>Default</stringvalue>
+	</entry>
+	<entry name="alternate_screen_scroll" mtime="1364625130" type="bool" value="true"/>
+	<entry name="palette" mtime="1364636499" type="string">
+		<stringvalue>#000000000000:#B487264F264F:#38E39C7138E3:#F425F4258886:#1E1A908FFFFF:#BB73497BBB73:#0000CDCBCDCB:#E5E2E5E2E5E2:#B7BDB7BDB7BD:#C7FD3C233C23:#425F9F1E425F:#EAAAEAAA87E9:#46458281B4AE:#B60F25EDB60F:#459EBE82BE82:#DCE6DCE6DCE6</stringvalue>
+	</entry>
+	<entry name="background_color" mtime="1364625130" type="string">
+		<stringvalue>#000000000000</stringvalue>
+	</entry>
+	<entry name="foreground_color" mtime="1364625130" type="string">
+		<stringvalue>#FFFFFFFFFFFF</stringvalue>
+	</entry>
+	<entry name="bold_color" mtime="1364625130" type="string">
+		<stringvalue>#58586E6E7575</stringvalue>
+	</entry>
+</gconf>
