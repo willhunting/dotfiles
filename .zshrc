@@ -14,6 +14,7 @@ ZSH_THEME="brett"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias git='nocorrect git'
 alias gs="git status --short"
 alias glog='git log --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
 

@@ -1,6 +1,7 @@
-set softtabstop=4
-set shiftwidth=4
-set tabstop=4
+set autoindent
+set softtabstop=2
+set shiftwidth=2
+set tabstop=2
 set expandtab
 set nowrap
 filetype on
@@ -15,15 +16,20 @@ colorscheme solarized
 let g:loaded_matchparen= 1
 let mapleader = "," 
 
+"CTRLP
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+
 "Auto indent curly braces
 :nmap <leader>b a{<cr>}<esc>O
 
 "FILETYPES-------------------------"
-autocmd FileType c,cpp set cindent
+autocmd FileType c,cpp set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 
-autocmd FileType css set smartindent
+autocmd FileType css set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+autocmd FileType scss set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 
-autocmd FileType ruby set autoindent shiftwidth=2 softtabstop=2 expandtab
+autocmd FileType ruby set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
+autocmd FileType javascript set autoindent shiftwidth=2 softtabstop=2 tabstop=2 expandtab
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " MULTIPURPOSE TAB KEY
