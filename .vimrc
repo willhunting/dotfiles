@@ -16,8 +16,12 @@ colorscheme solarized
 let g:loaded_matchparen= 1
 let mapleader = "," 
 
-"CTRLP
-set runtimepath^=~/.vim/bundle/ctrlp.vim
+"gistVim
+let g:gist_detect_filetype = 1
+let g:gist_open_browser_after_post = 1
+let g:gist_post_private = 1
+:map <leader>g :Gist<cr>
+:map <leader>ga :Gist -m<cr>
 
 "Auto indent curly braces
 :nmap <leader>b a{<cr>}<esc>O
@@ -52,3 +56,17 @@ function! MapCR()
     nnoremap <cr> :nohlsearch<cr>
 endfunction
 call MapCR()
+
+"Vundle plugin manager
+"
+filetype plugin indent on
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+"Plugins
+Bundle 'gmarik/vundle'
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
+Bundle 'kien/ctrlp.vim'
+
